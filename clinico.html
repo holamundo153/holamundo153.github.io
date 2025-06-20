@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBTIS 101 Motzorongo</title>
+  <link rel="stylesheet" href="style.css">
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #520115;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd4d4;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1, h2, h3, h4 {
+      color: #69051e;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .img-container {
+      margin-top: 15px;
+    }
+
+    .img-container img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, {
+        threshold: 0.2
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</head>
+<body>
+<style>
+    .yio{
+      text-align: justify;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
+  }
+
+  .per{
+    color: rgb(0, 0, 0);
+  }
+
+  .ert{
+    color: #87b111;
+  }
+
+        body {
+  background-image: url(imagenes/clinico.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+  </style>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="hola23.html">Inicio</a></li>
+        <li><a href="Carreras.html">Carreras Tecnicas</a></li>
+        <li><a href="Contactos.html">Vías de contacto</a></li>
+        <li><a href="Objetivo.html">Objetivos</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="imagenes/Imagotipo_DGETI_ok.png" alt=" CBTIS 101" />
+  </header>
+  <main>
+     <div class="yio">
+        <h3>Laboratorista Clínico</h3>
+        <h2 class="ert">Perfil de la carrera:</h2>
+Esta especialidad forma profesionales capacitados para realizar análisis de muestras biológicas con fines diagnósticos. Los estudiantes adquieren conocimientos en áreas como hematología, microbiología, química clínica e inmunología, y aprenden a operar equipos de laboratorio con precisión y responsabilidad.
+Módulos de formación profesional:
+<h3 class="per">- Auxilia en los procesos básicos de laboratorio clínico</h3>
+<h3 class="per">- Identifica microorganismos con base en técnicas microbiológicas</h3>
+<h3 class="per">- Analiza fluidos corporales de interés clínico</h3>
+<h3 class="per">- Analiza sangre con técnicas inmunohematológicas y hemostáticas</h3>
+<h3 class="per">- Aplica técnicas de química clínica y pruebas especiales</h3>
+<h2 class="ert">Habilidades que desarrolla el estudiante:</h2>
+<h3 class="per">- Toma y procesamiento de muestras biológicas</h3>
+<h3 class="per">- Manejo de equipos y reactivos de laboratorio</h3>
+<h3 class="per">- Aplicación de normas de bioseguridad</h3>
+<h3 class="per">- Interpretación de resultados clínicos</h3>
+<h3 class="per">- Elaboración de reportes técnicos</h3>
+<h2 class="ert">Campo laboral:</h2>
+Los egresados pueden trabajar en hospitales, clínicas, laboratorios públicos y privados, bancos de sangre, centros de investigación o en la industria farmacéutica. También pueden continuar estudios en áreas de salud como medicina, bioquímica o biotecnología.
+<h2 class="ert">Perfil de ingreso ideal:</h2>
+Se recomienda tener interés por las ciencias de la salud, habilidades en biología y química, atención al detalle y compromiso con la ética profesional y el trabajo en equipo.
+
+        <div class="img-container">
+          <img src="imagenes/clinicos.jpg" height="600" width="800" alt="Laboratorista Clínico" />
+          
+        </div>
+      </div>
+  </main>
